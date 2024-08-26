@@ -6,7 +6,7 @@ import twitter from '../Images/twitter.png';
 import whatsapp from '../Images/whatsapp.png';
 import youtube from '../Images/youtube.png';
 import alibaba from '../Images/alibaba_logo.png';
-// import logo from '../Images/logo-removebg.png';
+import logo from "../Images/logo.png";
 import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
@@ -34,7 +34,7 @@ const Footer = () => {
             <footer className="footer bg-base-200 text-base-content border-base-300 border-t px-5 md:px-28 py-4">
             <aside className="grid-flow-col items-center">
                 <p className='flex flex-wrap gap-8 items-center'>
-                <img src="#" className='w-40 h-full' />
+                <img src={logo} className='w-40 h-full' />
                 <br />
                 © Copyright 2024 | Rice Factory | All Rights Reserved
                 </p>
