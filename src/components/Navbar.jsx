@@ -1,8 +1,30 @@
+import { AuthContext } from "./AuthProvider";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 import logo from "../Images/logo.png";
+import { IoIosArrowForward } from "react-icons/io";
+import { CgProfile } from "react-icons/cg";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const Navbar = () => {
+    const { user, logOut, loading } = useContext(AuthContext);
     
+    if (loading) {
+        return <span className="loading loading-spinner loading-lg"></span>
+    }
+    const handleLogout = () => {
+        logOut()
+        .then(() => {
+            toast.success("Logout successful");
+          })
+        .catch(error => {
+            toast.error(error.message);
+          });
+    };
+
     return (
+        <>
         <div className="navbar bg-base-100 px-5 md:px-28 relative z-50">
         <div className="navbar-start">
             <div className="dropdown">
@@ -67,6 +89,28 @@ const Navbar = () => {
             <a className="btn">Growers</a>
         </div>
     </div>
+    <div className="navbar bg-orange-400 text-primary-content">
+        <div className="w-full flex justify-center">
+            <Link to="/riceform"><button className="btn btn-ghost text-xl text-white flex gap-2 items-center"><IoIosArrowForward />Forms</button></Link>
+            <Link to="/nonsuppling"><button className="btn btn-ghost text-xl text-white flex gap-2 items-center"><IoIosArrowForward />Non-supplying Grower Seed Ordering</button></Link>
+            {
+                user ? 
+                
+                    <div className="flex gap-3 items-center">
+                        
+                        <a className="btn text-white text-xl flex gap-2 items-center"><CgProfile /> {user.displayName}</a>
+                        <a onClick={handleLogout} className="btn btn-ghost text-xl text-white flex gap-2 items-center"><IoIosArrowForward />Logout</a>
+                    </div>
+
+                :   <div className="flex gap-3 items-center">
+                        <Link to="/login"><a className="btn btn-ghost text-xl text-white flex gap-2 items-center"><IoIosArrowForward />Login</a></Link>
+                        <Link to="/registration"><a className="btn btn-ghost text-xl text-white flex gap-2 items-center"><IoIosArrowForward />Registration</a></Link>
+                    </div>
+
+            }
+        </div>
+    </div>
+    </>
     );
 };
 

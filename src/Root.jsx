@@ -3,7 +3,8 @@ import './index.css';
 import Navbar from './components/Navbar';
 import whatsapp from './Images/whatsapp.png';
 import Footer from './components/Footer';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Root = () => {
     return (
         <div className="w-full">
@@ -15,6 +16,7 @@ const Root = () => {
                     <img src={whatsapp} className="w-16" title="Chat with Us" />
                 </a>
            </div>
+           <ToastContainer position="top-center" />
         </div>
     );
 };

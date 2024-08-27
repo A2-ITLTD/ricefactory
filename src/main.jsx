@@ -12,6 +12,11 @@ import Products from "./components/Products";
 import Contact from "./components/Contact";
 import About from "./components/About";
 import Policy from "./components/Policy";
+import AuthProvider from "./components/AuthProvider";
+import Login from "./components/Login";
+import Registration from "./components/Registration";
+import NonSupplying from "./components/NonSupplying";
+import RiceForm from "./components/RiceForm";
  
 const router = createBrowserRouter([ 
  { 
@@ -37,13 +42,28 @@ const router = createBrowserRouter([
     path: '/item/:id',
     element: <Products></Products>,
     loader : () => fetch('/items.json'),
-  }
+  },
+  { path: "/login",
+    element: <Login></Login>
+  },
+  { path: "/registration",
+    element: <Registration></Registration>
+  },
+  { path: "/nonsuppling",
+    element: <NonSupplying></NonSupplying>
+  },
+  { path: "/riceform",
+    element: <RiceForm></RiceForm>
+  },
+  
 ]
  }, 
 ]); 
  
 ReactDOM.createRoot(document.getElementById("root")).render( 
  <React.StrictMode> 
- <RouterProvider router={router} /> 
+  <AuthProvider>
+      <RouterProvider router={router} />
+  </AuthProvider> 
  </React.StrictMode> 
 ); 
