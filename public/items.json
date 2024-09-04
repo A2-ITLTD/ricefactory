@@ -2,37 +2,37 @@
     {
         "id" : 1,
       "name": "Basmati Rice",
-      "image": "https://i.ibb.co/6m4v1rF/it1.jpg",
+      "image": "https://i.postimg.cc/SNLv67T1/it1.jpg",
       "description": "Basmati Rice is renowned for its unique aroma and long, slender grains that elongate upon cooking. Cultivated primarily in the fertile plains of India and Pakistan, this premium rice variety is a staple in many cuisines, known for its fluffy texture and rich, nutty flavor. Basmati Rice is often the preferred choice for dishes like biryanis, pilafs, and other gourmet recipes where each grain remains separate and distinct."
     },
     {
         "id" : 2,
       "name": "Jasmine Rice",
-      "image": "https://i.ibb.co/6J5c0XT/it2.jpg",
+      "image": "https://i.postimg.cc/qMHF6ZLC/it2.jpg",
       "description": "Jasmine Rice, often referred to as Thai fragrant rice, is a long-grain variety known for its delicate floral aroma and soft, sticky texture when cooked. Originating from Thailand, Jasmine Rice is a favorite in Southeast Asian cuisines, particularly in dishes like stir-fries, curries, and as a side to grilled meats and seafood. Its subtle sweetness and fragrant scent make it a versatile and cherished staple in many households."
     },
     {
         "id" : 3,
       "name": "100% Broken Rice",
-      "image": "https://i.ibb.co/pvRSfWx/it3.jpg",
+      "image": "https://i.postimg.cc/Y9Js3XBZ/it3.jpg",
       "description": "100% Broken Rice consists of rice grains that have fractured during the milling process. While it lacks the uniform appearance of whole grains, it offers the same nutritional value and is often more affordable. Broken Rice is commonly used in recipes where the texture of individual grains is less important, such as in porridges, soups, and certain traditional dishes. It is also a key ingredient in animal feed and brewing."
     },
     {
         "id" : 4,
       "name": "Brown Rice",
-      "image": "https://i.ibb.co/tmxvdYq/it4.jpg",
+      "image": "https://i.postimg.cc/0jDHHp8Q/it4.jpg",
       "description": "Brown Rice is a whole grain that retains its bran and germ layers, making it a more nutritious option compared to white rice. With a slightly chewy texture and a nutty flavor, Brown Rice is rich in fiber, vitamins, and minerals. It is a popular choice for health-conscious consumers and is versatile enough to be used in salads, stir-fries, and as a wholesome side dish in various cuisines."
     },
     {
         "id" : 5,
       "name": "Long Grain Rice",
-      "image": "https://i.ibb.co/RNvwsGx/it5.jpg",
+      "image": "https://i.postimg.cc/qB3YRd8T/it5.jpg",
       "description": "Long Grain Rice is characterized by its slender grains that stay separate and fluffy when cooked. This type of rice is widely used in a variety of dishes, from pilafs and salads to casseroles and side dishes. Its mild flavor and light, fluffy texture make it a versatile choice, suitable for both everyday meals and special occasions. Long Grain Rice is a pantry staple in many households around the world."
     },
     {
         "id" : 6,
       "name": "Short Grain Rice",
-      "image": "https://i.ibb.co/myHn8gB/it6.jpg",
+      "image": "https://i.postimg.cc/R0p83SsM/it6.jpg",
       "description": "Short Grain Rice is known for its round, plump grains and sticky texture when cooked. This rice variety is ideal for dishes that require a cohesive texture, such as sushi, risotto, and rice puddings. Its slightly sweet taste and ability to absorb flavors make Short Grain Rice a favorite in both Asian and European cuisines. The sticky nature of the rice allows it to clump together, making it easy to shape and mold, which is essential for sushi and other similar dishes."
     }
 ]
